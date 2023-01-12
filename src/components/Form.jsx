@@ -1,19 +1,30 @@
 import React, {useState} from "react"
 
-const Form = ({formData,setFormData})=>{
+const Form = ({list, setList})=>{
+    const [formData, setFormData] = useState({
+        date:"",
+        price:"",
+        qty:"",
+        item:""
+    })
 
     const handleSubmit = (event)=> {
         event.preventDefault()
-        setFormData({
-            ...formData,
-            [event.target.name]: event.target.value
-        })
-       console.log(formData)
+        
+       setList(
+        [
+            ...list,
+            formData
+        ]
+       )
     }
 
     const handleOnChange = (event) => {
         formData[event.target.name] = event.target.value
-       
+        setFormData({
+            ...formData,
+            [event.target.name]: event.target.value
+        })
     }
 
     return (

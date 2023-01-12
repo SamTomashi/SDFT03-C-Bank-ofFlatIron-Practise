@@ -7,13 +7,12 @@ import React, {useState} from 'react';
 
 
 function App() {
-  const [formData, setFormData] = useState({})
   const [list, setList] = useState([])
     return(
       <div className='container'>
         <Navbar/>
-        <Form formData={formData} setFormData={setFormData}/>
-        <Table list={list} setList={setList}/>
+        <Form list={list} setList={setList}/>
+        <Table list={list}/>
       </div>
     )
 }
