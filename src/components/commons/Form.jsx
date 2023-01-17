@@ -23,7 +23,7 @@ const Form = ({list, setList})=>{
         <form className="row p-3 m-4" onSubmit={handleSubmit}>
             <div className="col-3">
                 <select name="item" onChange={handleOnChange} value={formData.item} className="form-select form-control form-control-sm" aria-label="Default select example">
-                    <option selected>select Item</option>
+                    <option defaultValue="">Select an item</option>
                     <option value="Item 1">item 1</option>
                     <option value="Item 2">item 2</option>
                     <option value="Item 3">item 3</option>
@@ -37,7 +37,7 @@ const Form = ({list, setList})=>{
             </div>
            
             <div className="col-3">
-                <button className="btn btn-sm btn-success btn-block text-uppercase" type="submit">Add To Cart</button>
+                <button className="btn btn-sm btn-outline-success btn-block text-uppercase" type="submit">Add To Cart</button>
             </div>
         </form>
     )
