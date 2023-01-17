@@ -41,7 +41,7 @@ const Form = ({list, setList})=>{
             </div>
            
             <div className="col-3 mx-auto p-3 text-center">
-                <button className="btn btn-sm btn-success btn-block text-uppercase" type="submit">Submit</button>
+                <button className="btn btn-sm btn-success btn-block text-uppercase" type="submit">Add To Cart</button>
             </div>
         </form>
     )

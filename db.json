@@ -15,6 +15,29 @@
       "product": "Milk",
       "price": "33",
       "id": 3
+    },
+    {
+      "product": "bread",
+      "price": "3",
+      "id": 4
+    },
+    {
+      "product": "bread",
+      "price": "3",
+      "id": 5
+    },
+    {
+      "product": "place holder",
+      "price": "45",
+      "image": "https://via.placeholder.com/150",
+      "id": 6
+    },
+    {
+      "product": "",
+      "price": 0,
+      "image": "https://via.placeholder.com/150",
+      "id": 7
     }
-  ]
+  ],
+  "sales": []
 }

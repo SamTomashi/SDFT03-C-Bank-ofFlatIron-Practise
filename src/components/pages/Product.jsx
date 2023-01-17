@@ -3,7 +3,8 @@ const Product = ()=> {
 
     const [formData,setFormData] = useState({
         product: "",
-        price: 0
+        price: 0,
+        image: "https://via.placeholder.com/150"
     })
     const handleSubmit = (event)=>{
         event.preventDefault();
@@ -12,7 +13,7 @@ const Product = ()=> {
             method: "POST",
             headers: {
                "Content-Type": "application/json", 
-               accept: "application/json",
+               "Accept": "application/json",
             },
             body: JSON.stringify(formData)
         })
