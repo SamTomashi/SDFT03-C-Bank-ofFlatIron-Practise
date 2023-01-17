@@ -23,7 +23,7 @@ const Form = ({list, setList})=>{
     }
 
     return (
-        <form className="row p-3" onSubmit={handleSubmit}>
+        <form className="row p-3 m-4" onSubmit={handleSubmit}>
             
             <div className="col-3">
                 <select name="item" onChange={handleOnChange} value={formData.item} className="form-select form-control form-control-sm" aria-label="Default select example">
@@ -40,7 +40,7 @@ const Form = ({list, setList})=>{
                 <input name="qty" onChange={handleOnChange} value={formData.qty} className="form-control form-control-sm" type="number" placeholder="QTY" aria-label=".form-control-sm example"/>
             </div>
            
-            <div className="col-3 mx-auto p-3 text-center">
+            <div className="col-3 text-center">
                 <button className="btn btn-sm btn-success btn-block text-uppercase" type="submit">Add To Cart</button>
             </div>
         </form>

@@ -30,7 +30,7 @@ const Product = ()=> {
     }
 
     return(
-        <div className="">
+        <div className="m-4">
             <form className="row" onSubmit={handleSubmit}>
                     <div className="col-4">
                         <input name="product" onChange={handleOnChange} value={formData.product}  className="form-control form-control-sm" type="text" placeholder="item name" aria-label=".form-control-sm example"/>
