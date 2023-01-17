@@ -1,18 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import Table from './components/Table';
-import Form from './components/Form';
+
 import React, {useState} from 'react';
+import {Routes, Route} from "react-router-dom";
+import Home from './components/pages/Home';
+import Product from './components/pages/Product';
+import Navbar from './components/commons/Navbar';
 
 
 function App() {
-  const [list, setList] = useState([])
+  
     return(
       <div className='container'>
         <Navbar/>
-        <Form list={list} setList={setList}/>
-        <Table list={list}/>
+        <Routes>
+          <Route   path="/" element={<Home to="/home"/>} />
+          <Route  path='/home' element={<Home/>} />
+          <Route path='/products' element={<Product/>}/>
+        </Routes>
       </div>
     )
 }
