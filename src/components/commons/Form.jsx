@@ -1,7 +1,8 @@
 import React, {useState} from "react"
+
 const Form = ({list, setList})=>{
     const [formData, setFormData] = useState({
-        date:"",
+        date: "",
         price:"",
         qty:"",
         item:""
@@ -16,15 +17,14 @@ const Form = ({list, setList})=>{
         formData[event.target.name] = event.target.value
         setFormData({
             ...formData,
-            [event.target.name]: event.target.value
+            [event.target.name]: event.target.value,
+            date: new Date().toLocaleString().toString(),
         })
     }
 
     return (
         <form className="row p-3" onSubmit={handleSubmit}>
-            <div className="col-3">
-                <input name="date" onChange={handleOnChange} value={formData.date} className="form-control form-control-sm" type="date"  placeholder="date" aria-label=".form-control-sm example"/>
-            </div>
+            
             <div className="col-3">
                 <select name="item" onChange={handleOnChange} value={formData.item} className="form-select form-control form-control-sm" aria-label="Default select example">
                     <option selected>select Item</option>
