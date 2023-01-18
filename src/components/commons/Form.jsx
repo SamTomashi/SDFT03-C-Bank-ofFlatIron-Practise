@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 
 const Form = ({list, setList})=>{
     const [formData, setFormData] = useState({
@@ -6,6 +6,16 @@ const Form = ({list, setList})=>{
         qty: 0,
         item: ""
     })
+
+    const [items, setItems] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3001/products/")
+        .then((response)=> response.json())
+        .then((data)=> {
+            setItems(data)
+        })
+    }, [])
 
     const handleSubmit = (event)=> {
         event.preventDefault()
@@ -17,6 +27,27 @@ const Form = ({list, setList})=>{
             ...formData,
             [event.target.name]: event.target.value
         })
+
+        if(event.target.name === "item"){
+            setFormData(
+                {
+                    ...formData,
+                [event.target.name]: event.target.value,
+                price: getItem(event.target.value).price
+                }
+            )
+        }
+    }
+
+    const getItem = (product)=> {
+        return items.find(item => item.product === product)
+    }
+
+
+    const displayItems = ()=> {
+        return items.map((item, index)=> {
+            return <option key={index} value={item.product}>{item.product}</option>
+        })
     }
 
     return (
@@ -24,9 +55,7 @@ const Form = ({list, setList})=>{
             <div className="col-3">
                 <select name="item" onChange={handleOnChange} value={formData.item} className="form-select form-control form-control-sm" aria-label="Default select example">
                     <option defaultValue="">Select an item</option>
-                    <option value="Item 1">item 1</option>
-                    <option value="Item 2">item 2</option>
-                    <option value="Item 3">item 3</option>
+                    {displayItems()}
                 </select>
             </div>
             <div className="col-3">

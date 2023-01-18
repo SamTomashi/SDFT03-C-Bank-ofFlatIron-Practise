@@ -1,42 +1,28 @@
 {
   "products": [
     {
-      "id": 1,
-      "product": "Sugar",
-      "price": 0,
-      "qty": 0
+      "product": "Milk",
+      "price": "1",
+      "image": "https://via.placeholder.com/150",
+      "id": 1
     },
     {
-      "product": "Milk",
-      "price": "33",
+      "product": "bread",
+      "price": "2",
+      "image": "https://via.placeholder.com/150",
       "id": 2
     },
     {
-      "product": "Milk",
-      "price": "33",
+      "product": "Salt",
+      "price": "4",
+      "image": "https://via.placeholder.com/150",
       "id": 3
     },
     {
-      "product": "bread",
-      "price": "3",
+      "product": "Soda",
+      "price": "175",
+      "image": "https://via.placeholder.com/150",
       "id": 4
-    },
-    {
-      "product": "bread",
-      "price": "3",
-      "id": 5
-    },
-    {
-      "product": "place holder",
-      "price": "45",
-      "image": "https://via.placeholder.com/150",
-      "id": 6
-    },
-    {
-      "product": "",
-      "price": 0,
-      "image": "https://via.placeholder.com/150",
-      "id": 7
     }
   ],
   "sales": []

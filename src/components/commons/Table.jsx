@@ -31,7 +31,7 @@ const Table = ({list})=> {
                     }
                 </tbody>
             </table>
-            <div>
+            <div className="">
                 <button className="text-uppercase btn btn-sm btn-outline-warning">Purchase</button>
             </div>
         </>
