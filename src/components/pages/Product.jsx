@@ -13,7 +13,7 @@ const Product = ()=> {
     const [formData,setFormData] = useState({
         product: "",
         price: 0,
-        image: "https://via.placeholder.com/150"
+        image: "https://via.placeholder.com/150x100"
     })
     const handleSubmit = (event)=>{
         event.preventDefault();
@@ -64,7 +64,7 @@ const Product = ()=> {
                 {
                     items.map((item, index)=> {
                         return(
-                            <div key={index} class="card col-sm-3 m-1" style={{width: "18rem;"}}>
+                            <div key={index} class="card col-sm-3 m-1 p-0" style={{width: "18rem;"}}>
                                 <img src={item.image} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <p class="card-text">Item Name: {item.product}</p>

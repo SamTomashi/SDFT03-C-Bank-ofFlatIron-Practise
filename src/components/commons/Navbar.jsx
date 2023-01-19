@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom"
 
 const Navbar = ()=> {
 
@@ -9,12 +10,15 @@ const Navbar = ()=> {
                 <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="/home">Home</a>
+                        <NavLink className="nav-link" aria-current="page" to="/home">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/products">Products</a>
+                        <NavLink className="nav-link" to="/products">Products</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/favorites">Favorites</NavLink>
                     </li>
                     
                 </ul>

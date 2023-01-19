@@ -2,27 +2,21 @@
   "products": [
     {
       "product": "Milk",
-      "price": "1",
-      "image": "https://via.placeholder.com/150",
+      "price": "3",
+      "image": "https://via.placeholder.com/150x100",
       "id": 1
     },
     {
       "product": "bread",
-      "price": "2",
-      "image": "https://via.placeholder.com/150",
+      "price": "7",
+      "image": "https://via.placeholder.com/150x100",
       "id": 2
     },
     {
       "product": "Salt",
-      "price": "4",
-      "image": "https://via.placeholder.com/150",
+      "price": "11",
+      "image": "https://via.placeholder.com/150x100",
       "id": 3
-    },
-    {
-      "product": "Soda",
-      "price": "175",
-      "image": "https://via.placeholder.com/150",
-      "id": 4
     }
   ],
   "sales": []

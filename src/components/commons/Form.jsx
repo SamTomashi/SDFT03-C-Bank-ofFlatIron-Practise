@@ -32,8 +32,8 @@ const Form = ({list, setList})=>{
             setFormData(
                 {
                     ...formData,
-                [event.target.name]: event.target.value,
-                price: getItem(event.target.value).price
+                    [event.target.name]: event.target.value,
+                    price: getItem(event.target.value).price
                 }
             )
         }
