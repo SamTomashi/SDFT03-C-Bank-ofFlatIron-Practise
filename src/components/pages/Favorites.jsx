@@ -1,7 +1,6 @@
 import {useState, useEffect} from "react"
 import Card from "../commons/Card"
 import { getItems } from "../../helper/helpers"
-const now = new Date().toISOString();
 
 const Favorites = ()=> {
     const [items, setItems] = useState([])
