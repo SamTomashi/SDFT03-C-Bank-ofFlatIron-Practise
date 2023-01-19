@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import Product from './components/pages/Product';
 import Navbar from './components/commons/Navbar';
 import ItemDetails from './components/pages/ItemDetails';
+import Favorites from './components/pages/Favorites';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/home" element={<Home/>} />
           <Route exact path="/products" element={<Product/>}/>
           <Route path="/products/:id" element={<ItemDetails/>}/>
+          <Route path="/favorites" element={<Favorites/>}/>
 
         </Routes>
       </div>

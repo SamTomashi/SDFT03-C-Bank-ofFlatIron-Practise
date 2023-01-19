@@ -17,6 +17,12 @@
       "price": "11",
       "image": "https://via.placeholder.com/150x100",
       "id": 3
+    },
+    {
+      "product": "Soda",
+      "price": "2",
+      "image": "https://via.placeholder.com/150x100",
+      "id": 4
     }
   ],
   "sales": []
